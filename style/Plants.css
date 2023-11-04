@@ -5,6 +5,11 @@
 
 }
 
+.blur {
+    filter: blur(0px);
+    transition: all 0.5s linear;
+}
+
 body {
     font-family: Inter, sans-serif;
     color: #636060;
@@ -280,25 +285,88 @@ section {
     flex-direction: column;
 }
 
+.tet.price {
+    padding: 0;
+    height: 20px;
+}
+
+.tet.price b {
+    color: rgba(0, 233, 0, 0);
+}
+
+.price-pressed.price {
+    width: 250px;
+    height: 154px;
+    overflow: visible;
+    background-color: #D6E7D2;
+}
+
 .price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    justify-content: space-between;
     width: 250px;
     height: 50px;
+    padding: 16px 40px 12px;
     background-color: #EDF2EC;
+    border: 0px;
     border-radius: 20px;
+    transition: all 0.3s linear;
+    box-sizing: border-box;
+
 }
 
-.price-button-content {
-    position: relative;
-    text-align: center;
+.price-button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: inter, serif;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dop-content {
+    font-size: 10px;
+    line-height: 10px;
+    color: #AEA1A1;
+    overflow: hidden;
+}
+
+.dop-content .firP {
+    border-top: 1px solid #AEA1A1;
+    padding-top: 5px;
+}
+
+.dop-content .secP {
+    font-size: 12px;
+    height: 35px;
     display: flex;
     align-items: center;
-    width: 170px;
-    height: 18px;
-    padding: 16px 40px;
-    justify-content: space-between;
-
+    color: #000;
+    font-weight: 400;
 }
 
+.dop-content span {
+    font-size: 16px;
+    color: #E06733;
+    font-weight: 700;
+}
+
+.dop-content .secSP {
+    font-size: 13px;
+}
+
+.order-button {
+    height: 25px;
+    width: 86px;
+    border-radius: 10px;
+    background-color: white;
+    color: #636060;
+    font-weight: bold;
+    border: 0px;
+}
 
 
 .acc-png {
@@ -354,6 +422,12 @@ section {
 
 /* contact us zone */
 
+
+
+.spisok {
+    
+}
+
 .contact-us-page {
     position: relative;
     display: flex;
@@ -376,6 +450,7 @@ section {
 
 .city-choose-menu {
     display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 0px 35px 0px 15px;
     width: 450px;
@@ -384,6 +459,8 @@ section {
     margin-bottom: 350px;
     align-items: center;
     box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 16px;
+    border: none;
 
 }
 

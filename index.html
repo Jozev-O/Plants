@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="assets/icons/logo_vector.ico">
+    <script src="app.js"></script>
 </head>
 
 
@@ -84,81 +85,88 @@
         </section>
 
 
+
         <section id="our-progects" class="our-peogects-page container">
 
-        <div class="op-holder">
+            <div class="op-holder">
 
-            <div class="op-headline">
+                <div class="op-headline">
 
-                <h2 class="op-h2-text">Service and our projects</h2>
+                    <h2 class="op-h2-text">Service and our projects</h2>
 
-                <div class="op-category-byttons">
+                    <div class="op-category-byttons">
 
-                    <button class="button v2">Gardens</button>
-                    <button class="button v2">Lawn</button>
-                    <button class="button v2">Planting</button>
+                        <button id="garden" onclick="oneClickButton(this);" class="button v2">Gardens</button>
+                        <button id="lawn" onclick="oneClickButton(this);" class="button v2">Lawn</button>
+                        <button id="planting" onclick="oneClickButton(this);" class="button v2">Planting</button>
+                    </div>
+                </div>
+
+                <div class="card-holder">
+
+                    <div name="garden" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Garden care</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+
+                    <div name="planting" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first2.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Planting</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+
+                    <div name="lawn" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first3.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Lawn care</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+
+                    <div name="planting" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first4.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Planting</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+
+                    <div name="garden" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first5.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Garden care</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+
+                    <div name="planting" class="card blur">
+
+                        <img class="card-img" src="assets/op-zone/first6.jpg" alt="">
+
+                        <div class="card-text-box">
+                            <h2 class="card-text-h2">Planting</h2>
+                            <p class="card-text">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card-holder">
-
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Garden care</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first2.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Planting</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first3.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Lawn care</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first4.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Planting</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first5.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Garden care</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <img class="card-img" src="assets/op-zone/first6.jpg" alt="">
-
-                    <div class="card-text-box">
-                        <h2 class="card-text-h2">Planting</h2>
-                        <p class="card-text">Lorem Ipsum has been the industry</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         </section>
+
 
 
         <section id="prices" class="prices-page container">
@@ -169,33 +177,42 @@
 
                 <div class="prices-box">
 
-                    <div class="price">
-
-                        <div class="price-button-content">
-                            <p>
-                                Basics
-                            </p>
-                            <img class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                    <div id="1buttBox" class="price ">
+                        <button id="1butt" onclick="priseButtonTransform(this.id)" class="price-button">
+                            <b>Basics</b>
+                            <img id="1buttImg" class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                        </button>
+                        <div id="1buttCont" class="dop-content">
+                            <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="secP"><span> <span class="secSP">$</span>15 </span>/ per hour</p>
+                            <button class="order-button">Order</button>
                         </div>
                     </div>
 
-                    <div class="price">
-
-                        <div class="price-button-content">
-                            <p>
-                                Standard
-                            </p>
-                            <img class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                    <div id="2buttBox" class="price ">
+                        <button id="2butt" onclick="priseButtonTransform(this.id)" class="price-button">
+                            <b>Standard</b>
+                            <img id="2buttImg" class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                        </button>
+                        <div id="2buttCont" class="dop-content">
+                            <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="secP"><span> <span class="secSP">$</span>25 </span>/ per hour</p>
+                            <button class="order-button">Order</button>
                         </div>
                     </div>
 
-                    <div class="price">
-
-                        <div class="price-button-content">
-                            <p>
-                                Pro care
-                            </p>
+                    <div id="3buttBox" class="price  ">
+                        <button id="3butt" onclick="priseButtonTransform(this.id)" class="price-button">
+                            <b>Pro care</b>
                             <img class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                        </button>
+                        <div id="3buttCont" class="dop-content">
+                            <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="secP"><span> <span class="secSP">$</span>35 </span>/ per hour</p>
+                            <button class="order-button">Order</button>
                         </div>
                     </div>
 
@@ -223,12 +240,12 @@
 
             <div class="city-choose-menu">
 
-                <div class="city-choose-menu-content">
-
-                    <p>City</p>
-
-                    <img src="assets/accordion_btn.svg" alt="">
-                </div>
+                <ul class="spisok">City
+                    <li><a href="#">Подпункт</a></li>
+                    <li><a href="#">Подпункт</a></li>
+                    <li><a href="#">Подпункт</a></li>
+                </ul>
+                <img src="assets/icons/accordion_btn.svg" alt="">
             </div>
         </section>
     </main>
