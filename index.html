@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="assets/icons/logo_vector.ico">
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </head>
 
 
@@ -177,11 +177,14 @@
 
                 <div class="prices-box">
 
-                    <div id="1buttBox" class="price ">
+                    <div id="1buttBox" class="price">
                         <button id="1butt" onclick="priseButtonTransform(this.id)" class="price-button">
                             <b>Basics</b>
-                            <img id="1buttImg" class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                            <div class="accordion-btn in-price">
+                                <div class="arrow in-price"></div>
+                            </div>
                         </button>
+
                         <div id="1buttCont" class="dop-content">
                             <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
                                 recently</p>
@@ -190,11 +193,14 @@
                         </div>
                     </div>
 
-                    <div id="2buttBox" class="price ">
+                    <div id="2buttBox" class="price">
                         <button id="2butt" onclick="priseButtonTransform(this.id)" class="price-button">
                             <b>Standard</b>
-                            <img id="2buttImg" class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                            <div class="accordion-btn in-price">
+                                <div class="arrow in-price"></div>
+                            </div>
                         </button>
+
                         <div id="2buttCont" class="dop-content">
                             <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
                                 recently</p>
@@ -203,11 +209,14 @@
                         </div>
                     </div>
 
-                    <div id="3buttBox" class="price  ">
+                    <div id="3buttBox" class="price">
                         <button id="3butt" onclick="priseButtonTransform(this.id)" class="price-button">
                             <b>Pro care</b>
-                            <img class="acc-png" src="assets/icons/accordion_btn.png" alt="">
+                            <div class="accordion-btn in-price">
+                                <div class="arrow in-price"></div>
+                            </div>
                         </button>
+
                         <div id="3buttCont" class="dop-content">
                             <p class="firP">Release of Letraset sheets containing Lorem Ipsum passages, and more
                                 recently</p>
@@ -237,15 +246,40 @@
             <img src="assets/plants/contact_woman.png" alt="">
 
             <h2>Contact us</h2>
-
-            <div class="city-choose-menu">
-
-                <ul class="spisok">City
-                    <li><a href="#">Подпункт</a></li>
-                    <li><a href="#">Подпункт</a></li>
-                    <li><a href="#">Подпункт</a></li>
-                </ul>
-                <img src="assets/icons/accordion_btn.svg" alt="">
+            <div class="select-section">
+                <div class="dropdown">
+                    <div class="select" onclick="cityChooseClick()">
+                        <span class="selected">City</span>
+                        <div class="accordion-btn">
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li class="">Canandaigua, NY</li>
+                        <li class="">New York City</li>
+                        <li class="">Yonkers, NY</li>
+                        <li class="">Sherrill, NY</li>
+                    </ul>
+                </div>
+                <div class="city-card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="first">City:</td>
+                                <td id="city" class="second">Canandaigua, NY</td>
+                            </tr>
+                            <tr>
+                                <td class="first">Phone:</td>
+                                <td id="phone" class="second">+1 585 393 0001</td>
+                            </tr>
+                            <tr>
+                                <td class="first">Office adress:</td>
+                                <td id="adress" class="second">151 Charlotte Street</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="button call-btn">Call us</button>
+                </div>
             </div>
         </section>
     </main>
