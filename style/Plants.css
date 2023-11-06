@@ -5,27 +5,21 @@
 
 }
 
-@media (min-width: 768px) {
-    .about-us-page {
-        display: none;;
-    }
-}
 
 body {
     font-family: Inter, sans-serif;
     color: #636060;
     background-color: #EDF2EC;
-    width: 1440px;
+    min-width: 1440px;
     box-sizing: border-box;
-}
-
-section {
-    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container {
-    padding: 0px calc(((100vw - 1440px) / 2) + 109px);
-    /* min-width: 1440px; */
+    padding: 0px calc(100vw - 50vw - (80vw / 2));
+
 }
 
 button {
@@ -51,7 +45,6 @@ button {
     border: 2px #E06733 solid;
     padding: 10px 40px;
     border-radius: 5px;
-    margin-left: 38px;
     font-weight: 700;
     transition: all 0.2s linear;
 }
@@ -90,8 +83,15 @@ button {
     transition: all 0.3s linear;
 }
 
+
+
+
+
+
+
 .head-line {
-    padding: 42px 0px;
+    padding-top: 42px;
+    padding-bottom: 42px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -128,7 +128,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1222px;
     height: 482px;
     padding: 100px 0px;
 }
@@ -177,7 +176,6 @@ button {
     position: relative;
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1222px;
 }
 
 .au-text-holder {
@@ -214,9 +212,11 @@ button {
 /* our prohects zone */
 
 .our-peogects-page {
-    position: relative;
     height: 1300px;
-    padding-bottom: 131px;
+    padding-bottom: 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .op-headline {
@@ -225,6 +225,12 @@ button {
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+}
+
+.op-category-byttons {
+    display: flex;
+    width: 559px;
+    justify-content: space-between;
 }
 
 .op-h2-text {
@@ -238,17 +244,17 @@ button {
 }
 
 .card-holder {
-    position: relative;
-    top: 90px;
     display: grid;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
     grid-template-columns: 330px 330px 330px;
-    gap: 117px;
-    align-items: stretch;
-    height: 1055px;
+    row-gap: 100px;
+    min-height: 955px;
+    grid-auto-rows: 450px;
 }
 
 .card {
+    height: 450px;
     display: flex;
     flex-direction: column;
 }
@@ -261,7 +267,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .card-text-h2 {
@@ -287,7 +292,6 @@ button {
 /* prices zone */
 
 .prices-page {
-    position: relative;
     height: 460px;
     background-color: #fff;
     display: flex;
@@ -297,7 +301,6 @@ button {
 }
 
 .prices-h2-text {
-    position: absolute;
     color: #000;
     font-size: 40px;
 }
@@ -471,7 +474,6 @@ button {
 /* contact us zone */
 
 .contact-us-page {
-    position: relative;
     display: flex;
     height: 570px;
     justify-content: space-between;
@@ -593,8 +595,6 @@ td {
     width: 190px;
 }
 
-
-
 .call-btn {
     width: 122px;
     height: 26px;
@@ -607,8 +607,6 @@ td {
     bottom: 22px;
 
 }
-
-
 
 .city-card {
     box-sizing: border-box;
@@ -645,8 +643,6 @@ td {
 
 
 footer {
-    position: relative;
-    width: 1220px;
     height: 130px;
     background-color: #fff;
     display: flex;
@@ -674,4 +670,80 @@ footer {
     align-items: end;
     width: 188px;
     justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        min-width: 1124px;
+    }
+
+    .about-us-page {
+        flex-direction: column;
+    }
+
+    .header-wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .au-text-holder {
+        align-items: center;
+    }
+
+    .au-h2-text {
+        text-align: center;
+    }
+
+    .au-text {
+        min-width: 668px;
+    }
+
+    .op-headline {
+        flex-direction: column;
+        height: 184px;
+        align-items: self-start;
+    }
+
+    .our-peogects-page {
+        min-height: 1780px;
+    }
+
+    .op-category-byttons {}
+
+    .card-holder {
+        grid-template-columns: 330px 330px;
+        height: 1426px;
+        justify-content: space-around;
+        row-gap: 38px;
+    }
+
+    .contact-us-page {
+        flex-direction: column;
+        height: 739px;
+        align-items: center;
+    }
+
+    .contact-us-page h2 {
+        margin-bottom: 121px;
+        margin-top: 40px;
+    }
+
+
+    .contact-us-page img {
+        max-width: 200px;
+        order: 4;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 181px;
+        justify-content: center;
+    }
+
+    @media (max-width: 380px) {
+        .about-us-page {
+            flex-direction: column-reverse;
+        }
+    }
+
 }
